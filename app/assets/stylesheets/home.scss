@@ -1,3 +1,27 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin: 0;
+}
+
+div.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 20px 0;
+}
+h1#logo {
+  font-size: 4em;
+  font-family: "Chewy", sans-serif;
+  letter-spacing: 3px;
+}
+
+div.tool-bar {
+  padding: 10px 0;
+  p {
+    margin: 0;
+  }
+}

@@ -8,8 +8,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+    
+<div class="tool-bar">
+  <div class="wrapper">
+    <% if current_admin_user %>
+      <p>Welcome back, <%= current_admin_user.email %>!</p>
+    <% end %>
+  </div>
+</div>
+<header>
+  <div class="wrapper">
+    <h1 id="logo">The Radio Freqs</h1>
+  </div>
+</header>
+<div class="wrapper">
+  <%= yield %>
+</div>
 
 </body>
 </html>
