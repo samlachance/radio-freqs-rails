@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  get 'posts/show'
+
+  get 'posts/modify'
+
+  get 'posts/create'
+
+  get 'posts/new'
+
+  get 'posts/delete'
+
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
