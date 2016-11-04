@@ -1,3 +1,4 @@
+<%= javascript_include_tag Ckeditor.cdn_url %>
 <h2>New post</h2>
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
@@ -14,7 +15,15 @@
   <br>
   <%= f.text_field :description, placeholder: "Description" %>
   <br>
-  <%= f.text_area :body, placeholder: "Body" %>
+  <%= f.cktext_area :body, placeholder: "Body" %>
   <br>
   <%= f.submit %>
+
+
+
+  = form_for @page do |form|
+  = form.cktext_area :notes, class: 'someclass', ckeditor: { language: 'uk'}
+  = form.cktext_area :content, value: 'Default value', id: 'sometext'
+  = cktext_area :page, :info, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }
 <% end %>
+

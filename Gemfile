@@ -20,6 +20,10 @@ gem 'activeadmin'
 gem 'devise'
 gem 'cancancan' # or cancancan
 
+gem 'ckeditor'
+
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
